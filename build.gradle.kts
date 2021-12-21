@@ -38,7 +38,7 @@ object Versions {
 }
 
 dependencies {
-//    implementation(files("/Users/arnabmitra/provenance/protoBindings/bindings/kotlin/build/libs/proto-kotlin-feature_msg-based-fees-proto-0c10fdf.jar"))
+    implementation(files("./local_lib/proto-kotlin-feature_msg-based-fees-proto-0c10fdf.jar"))
     // Kotlin
     implementation("org.jetbrains.kotlin:kotlin-allopen:${Versions.Kotlin}")
     implementation("org.jetbrains.kotlin:kotlin-reflect:${Versions.Kotlin}")
@@ -65,6 +65,7 @@ dependencies {
     implementation("com.github.komputing.kethereum:model:${Versions.Kethereum}")
     implementation("com.github.komputing:kbase58:${Versions.Komputing}")
     implementation("com.github.komputing:kbip44:${Versions.Komputing}")
+    implementation("com.google.protobuf:protobuf-java:3.19.1")
 
     // Test
     testImplementation("org.jetbrains.kotlin:kotlin-test")
